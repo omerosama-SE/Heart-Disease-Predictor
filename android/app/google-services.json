@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "576588750108",
+    "project_id": "heartpredictorstates",
+    "storage_bucket": "heartpredictorstates.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:576588750108:android:2eacf80665c0aeef9daed9",
+        "android_client_info": {
+          "package_name": "com.example.heart_disease_predictor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMRXD2jCtYpCaWHJc31HgaWmd9BW0jNOE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

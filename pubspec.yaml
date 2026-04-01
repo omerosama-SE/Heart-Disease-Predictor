@@ -1,0 +1,198 @@
+name: heart_disease_prediction
+description: "A new Flutter project."
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.2.6 <4.0.0'
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+    
+
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
+  google_nav_bar: ^5.0.6
+  firebase_core: ^2.25.5
+  firebase_auth: ^4.17.6
+  cloud_firestore: ^4.15.6
+  dio: ^5.4.1
+  table_calendar: ^3.1.0
+  percent_indicator: ^4.2.3
+  easy_date_timeline: ^1.0.6
+  expandable_text: ^2.3.0
+  simple_toast_message: ^0.0.6
+  http: ^1.2.1
+  url_launcher: ^6.2.5
+  intl: ^0.19.0
+  quickalert: ^1.1.0
+  shared_preferences: ^2.2.2
+  cherry_toast: ^1.10.1
+  shimmer: ^3.0.0
+  
+  
+  
+  
+  
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^2.0.0
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/_31f75d3e-ef0d-4330-adca-3e9f76cdae2a.jpg
+    - assets/images/_31f75d3e-ef0d-4330-adca-3e9f76cdae2a-removebg.png
+    - assets/images/_a75db78a-6402-465c-8f51-1b8541dfa7ad-removebg-preview.png
+    - assets/images/user.png
+    - assets/images/doctor.png
+    - assets/images/doctor (1).png
+    - assets/images/prescription.png
+    - assets/images/blood-test.png
+    - assets/images/check (1).png
+    - assets/images/heartbeat.png
+    - assets/images/doctor33.png
+    - assets/images/stethoscope.png
+    - assets/images/stethoscope-medical-tool.png
+    - assets/images/pin.png
+    - assets/images/payment-method.png
+    - assets/images/money.png
+    - assets/images/star.png
+    - assets/images/timer.png
+    - assets/images/panel.png
+    - assets/images/austin-distel-7bMdiIqz_J4-unsplash.jpg
+    - assets/images/correct.png
+    - assets/images/doctor (1s).png
+    - assets/images/prescription (1).png
+    - assets/images/prescription (2).png
+    - assets/images/check-up.png
+    - assets/images/healthcare.png
+    - assets/images/heart-rate.png
+    - assets/images/heart-beat0.png
+    - assets/images/health-check.png
+    - assets/images/blood-sample (1).png
+    - assets/images/avatar-design.png
+    - assets/images/calendar.png
+    - assets/images/prescription (3).png
+    - assets/images/patient.png
+    - assets/images/patientinfo.png
+    - assets/images/sex.png
+    - assets/images/MAicon.png
+    - assets/images/bloodTest9.png
+    - assets/images/user22.png
+    - assets/images/userprofile.png
+    - assets/images/zUSER.png
+    - assets/images/medical-prescription.png
+    - assets/images/medical-prescription (1).png
+    - assets/images/user011.png
+    - assets/images/medtest.png
+    - assets/images/medical-report.png
+    - assets/images/medical-report (1).png
+    - assets/images/chemical-analysis.png
+    - assets/images/letter-a.png
+    - assets/images/log-out.png
+    - assets/images/logout.png
+    - assets/images/userConfirm.png
+    - assets/images/schedule.png
+    - assets/images/schedule (1).png
+    - assets/images/location.png
+    - assets/images/userrrr.png
+    - assets/images/userrrr (2).png
+    - assets/images/icons8-money-96(-xxhdpi).png
+    - assets/images/doctorss.png
+    - assets/images/notification.png
+    - assets/images/notification (1).png
+    - assets/images/bell.png
+    - assets/images/_9caa2b7c-29f7-4f2f-a033-8185baf2f0f1.png
+    - assets/images/_5b957ed1-282b-49a2-a4d8-0e9cca92f5ac.jpeg
+    - assets/images/Al-Mokhtabar.jpg
+    - assets/images/63287.jpeg
+    - assets/images/microscope.png
+    - assets/images/medical.png
+    - assets/images/status.png
+    - assets/images/status (1).png
+    - assets/images/location (1).png
+    - assets/images/telephone.png
+    - assets/images/phone.png
+    - assets/images/microscope (1).png
+    - assets/images/microscope (2).png
+    - assets/images/microscope (3).png
+    - assets/images/medical-checkup.png
+    - assets/images/swap.png
+    - assets/images/swap (1).png
+    - assets/images/up-and-down-arrow.png
+    - assets/images/funnel.png
+    - assets/images/transfer.png
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/assets-and-images/#resolution-aware
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/assets-and-images/#from-packages
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  fonts:
+    - family: Myriad
+      fonts:
+        - asset: assets/images/Myriad Pro Bold SemiCondensed.otf
+    - family: antonRegular
+      fonts:
+        - asset: assets/images/Anton-Regular.ttf    
+    - family: seymourOneRegular
+      fonts:
+        - asset: assets/images/SeymourOne-Regular.ttf    
+    - family: titanOneRegular
+      fonts:
+        - asset: assets/images/TitanOne-Regular.ttf
+    - family: abrilFatfaceRegular
+      fonts:
+        - asset: assets/images/AbrilFatface-Regular.ttf
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/custom-fonts/#from-packages
